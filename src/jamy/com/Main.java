@@ -1,5 +1,7 @@
 package jamy.com;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         IsPrime.isPrime(10);
@@ -37,5 +39,18 @@ public class Main {
         int []isInertialArr = {-2,-4,-6,-8,-11};
         int isInertial = IsInertial.arrayIsInertial(isInertialArr);
         System.out.println(isInertial);
+
+        System.out.println("/////// Rescue Boats //////////");
+        int []peopleOnBoat = {1,2,4,5,2,3};
+        int rescueBoatsNeeded = BootRescue.numRescueBoots(peopleOnBoat, 5);
+        System.out.println(rescueBoatsNeeded);
+
+        System.out.println("//////// Porcupine Number ////////");
+        int porcupineNum = PorcupineNumber.findPorcupineNumber(149);
+        System.out.println(porcupineNum);
+
+        System.out.println("//////// Repeated DNA subsequence ////////");
+        List<String> subsequence = RepeatedDNASequence.findRepeatedDnaSequence("CCCCCDDDDDCCCCCDDDDDTTTDDDHHHII");
+        System.out.println(subsequence);
     }
 }
