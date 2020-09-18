@@ -1,5 +1,6 @@
 package jamy.com;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -85,5 +86,34 @@ public class Main {
         int[] isMaxMinArr = {1, 1, 2, 3, 2, 0};
         int isMaxMinEq = IsMaxMin.isMaxMinEqual(isMaxMinArr);
         System.out.println(isMaxMinEq);
+
+        System.out.println("//////// Is Paired ////////");
+        int[] isPairedArr = {7, 2, 3, 6, 7};
+        int isPaired = Paired.isPaired(isPairedArr);
+        System.out.println(isPaired);
+
+        System.out.println("//////// Point Of Equilibrium ////////");
+        int[] poeArr = {2, 1, 1, 1, 2, 1, 7};
+        int poe = PointOfEquilibrium.f(poeArr);
+        System.out.println(poe);
+
+        System.out.println("//////// Number is Meera ////////");
+        int isMeeraNum = IsMeera.isMeera(21);
+        System.out.println(isMeeraNum);
+
+        System.out.println("//////// Is Bunker Array ////////");
+        int[] isBunkerArr = {7, 6, 10, 1, 8, 1, 3};
+        int isBunker = Bunker.isBunkerArr(isBunkerArr);
+        System.out.println(isBunker);
+
+        System.out.println("//////// Common Array Elements ////////");
+        int[] firstArr = {1, 3, 7, 9};
+        int[] secondArr = {7, 1, 9, 3};
+        int[] commonElements = CommonElements.f(firstArr, secondArr);
+        System.out.println(Arrays.toString(commonElements));
+
+        System.out.println("//////// Convert number ////////");
+        int reversedNumber = Number.reverseNumber(-12345);
+        System.out.println(reversedNumber);
     }
 }
